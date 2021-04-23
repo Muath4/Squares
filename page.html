@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pixel Art Maker!</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: aliceblue;">
+  
+<!--  <h1>Pixel Art Maker</h1>-->
+
+<!--
+  <h2>Choose Grid Size </h2>
+  <h4>(Max 50x50)</h4>
+-->
+
+
+<div class="container p-3 my-3 bg-primary text-white">
+  <span style="text-align:center;">
+  <form id="sizePicker">
+    
+    <input type="number" id="inputHeight" name="height" min="4" value="4" max="10"style="text-align: center;"onclick="updateTableSize()">
+    <div class="btn btn-info" style="margin: 5px;">:ارتفاع الشبكة</div>
+      
+
+    <br>
+    <input type="number" id="inputWidth" name="width" min="4" value="4" max="10" style="text-align: center;" onclick="updateTableSize()">
+    <div class="btn btn-info" style="margin: 5px;">:عرض الشبكة</div>
+ <br>
+      
+      <br>
+    <button type="submit" class="btn btn-secondary"  ><span class="badge badge-light" id="tableSize">4*4</span> إنشاء الشبكة </button>
+  </form>
+
+<br> 
+<div class=" text-align:center;">
+    <button id="btnGray" onclick="grayColor()" class="btn btn-secondary" ></button>
+    <button id="btnGreen" onclick="greenColor()" class="btn btn-success"></button>
+    <button id="btnOrigin" onclick="originColor()" class="btn"style="font-size: 2em;">
+      <svg width="1em" height="3em" viewBox="0 0 16 16" class="bi bi-easel" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.473.337a.5.5 0 0 0-.946 0L6.954 2h2.092L8.473.337zM12.15 11h-1.058l1.435 4.163a.5.5 0 0 0 .946-.326L12.15 11zM8.5 11h-1v2.5a.5.5 0 0 0 1 0V11zm-3.592 0H3.85l-1.323 3.837a.5.5 0 1 0 .946.326L4.908 11z"></path>
+        <path fill-rule="evenodd" d="M14 3H2v7h12V3zM2 2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"></path>
+      </svg>
+  </button>
+    <button id="btnYellow" onclick="yellowColor()" class="btn btn-warning"></button>
+    <button id="btnRed" onclick="redColor()" class="btn btn-danger"></button>
+  </div>
+<br><br>
+
+  <table id="pixelCanvas"></table>
+
+</span>
+</div>
+  <script src="designs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  background-color: rgba(228, 228, 228, 1);
+}
+
+h1 {
+  font-family: Monoton;
+  font-size: 70px;
+  margin: 0.2em;
+}
+
+h2 {
+  margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+
+/* table,
+tr,
+td {
+  border: 7px solid white;
+}
+*/
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+} 
+
+tr {
+  height: 95px;
+}
+
+td {
+  width: 95px;
+}
+
+/* input[type=number] {
+  width: 6em;
+} */
+
+#btnGreen {
+  
+    margin: 15px;
+    padding: 25px 32px;
+    height: 60px;
+    width: 60px;
+}
+
+#btnRed {
+    margin: 15px;
+    padding: 25px 32px;
+    height: 60px;
+    width: 60px;
+}
+#btnGray {
+    margin: 15px;
+    padding: 25px 32px;
+    height: 60px;
+    width: 60px;
+}
+#btnYellow {
+    margin: 15px;
+    padding: 25px 32px;
+    height: 60px;
+    width: 60px;
+}
+/* #btnOrigin {
+    margin: 15px;
+    padding: 25px 32px;
+    height: 40px;
+    width: 40px;
+} */
